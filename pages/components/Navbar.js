@@ -6,6 +6,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between m-auto max-w-screen-lg p-10">
         <div>
+          <Link href="/">
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -14,11 +15,13 @@ const Navbar = () => {
               height={24}
               priority
             />
-            </div>
-            <div className="flex gap-4">
-                <Link href="/">Home</Link>
-                <Link href="/About">About</Link>
-            </div>
+          </Link>
+        </div>
+        <div className="flex gap-4">
+          <Link href="/">Home</Link>
+          <Link href="/About">About</Link>
+          <Link href="/Flatplan">Flatplan</Link>
+        </div>
     </div>
   )
 }
